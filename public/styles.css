@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Paprika&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  padding: 0 20px;
+}
+button,
+input {
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  padding: 20px 16px;
+  background-color: #fbfdff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.card__icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 100%;
+  background: linear-gradient(to left, #8e2de2, #4a00e0);
+}
+
+.card__title {
+  text-align: center;
+  background: linear-gradient(to left, #8e2de2, #4a00e0);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card p {
+  color: #4b5563;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.card__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p.card_badge {
+  color: #111;
+  border-radius: 50px;
+  padding: 4px 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card__divider {
+  width: 100%;
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 28px 0;
+}
+
+.card__feedback {
+  background-color: #f9fafb;
+  padding: 20px;
+  border-radius: 8px;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 20px;
+}
+.card__feedback--low {
+  background-color: #ffe9e9;
+  color: #fa6e6e;
+
+  p {
+    color: #fa6e6e;
+  }
+}
+.card__feedback--high {
+  background-color: #cddaff;
+  color: #507efd;
+  p {
+    color: #507efd;
+  }
+}
+.card__feedback--win {
+  background-color: #cdffd1;
+  color: #21642c;
+  p {
+    color: #21642c;
+  }
+}
+.card__feedback > p {
+  text-align: left;
+  margin: 0;
+  line-height: 1.6rem;
+}
+
+.card__feedback_title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 12px;
+}
+.card__feedback_title > h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.card__form {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card__form > input {
+  width: 100%;
+  font-size: large;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background-color: #fff;
+  color: #111;
+}
+.card__form > input:focus-visible {
+  outline: none;
+}
+
+.card__form > button {
+  background: linear-gradient(to left, #8e2de2, #4a00e0);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+.card__form > button:disabled {
+  opacity: 0.5;
+}
+
+.card__restart {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #111;
+  font-size: small;
+  font-weight: 600;
+  padding: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.card__progress_data {
+  display: flex;
+  justify-content: space-between;
+}
+.card__progress_data > p {
+  margin: 0;
+}
+
+.card__progress_container {
+  width: 100%;
+  background-color: #e5e7eb;
+  height: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  position: relative;
+}
+.card__progress_bar {
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to left, #8e2de2, #4a00e0);
+  border-radius: 8px;
+  position: absolute;
+}
+.card__progress_bar--win {
+  background: #7be08c;
+}
+.card__progress_bar--lose {
+  background: #e07b7b;
+}
